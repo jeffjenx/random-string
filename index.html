@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="styles/general.css" rel="stylesheet" type="text/css" />
+		
+		<meta charset="UTF-8" />
+		
+		<script src="scripts/general.js" type="text/javascript"></script>
+		
+		<title>Random String Generator</title>
+	</head>
+	
+	<body>
+		<form>
+			<label for="lowercase">
+				Lowercase
+				<small>a&hellip;z</small>
+			</label>
+			<input checked="checked" id="lowercase" name="lowercase" type="checkbox" />
+		
+			<label for="uppercase">
+				Uppercase
+				<small>A&hellip;Z</small>
+			</label>
+			<input checked="checked" id="uppercase" name="uppercase" type="checkbox" />
+		
+			<label for="numeric">
+				Numeric
+				<small>0&hellip;9</small>
+			</label>
+			<input checked="checked" id="numeric" name="numeric" type="checkbox" />
+			
+			<label for="length">
+				Length
+				<small>0&hellip;99</small>
+			</label>
+			<input id="length" maxlength="2" max="99" min="1" name="length" pattern="\d*" step="1" type="text" value="33" />
+			
+			<a href="#" onclick="toggleOptions( this ); return false;">More Options</a>
+			<div id="more">
+				<label for="brackets">
+					Brackets
+					<small>(){}[]&lt;&gt;</small>
+				</label>
+				<input id="brackets" name="brackets" type="checkbox" />
+				
+				<label for="math">
+					Math
+					<small>+=^*~\/</small>
+				</label>
+				<input id="math" name="math" type="checkbox" />
+				
+				<label for="punctuation">
+					Punctuation
+					<small>!@#$%&amp;'":;,.?</small>
+				</label>
+				<input id="punctuation" name="punctuation" type="checkbox" />
+				
+				<label for="separators">
+					Separators
+					<small>_-</small>
+				</label>
+				<input id="separators" name="separators" type="checkbox" />
+				
+				<label for="distinctive">
+					Distinctive
+					<small><del>I,l,1,O,0</del></small>
+				</label>
+				<input id="distinctive" name="distinctive" type="checkbox" />
+				
+				<label for="nonrepeating">
+					Non-Repeating
+					<small>A&hellip;<del>AA</del>&hellip;A</small>
+				</label>
+				<input id="nonrepeating" name="nonrepeating" type="checkbox" />
+				
+				<label for="phonetics">
+					Phonetics
+					<small>Echo Whiskey</small>
+				</label>
+				<input id="phonetics" name="phonetics" type="checkbox" />
+			</div>
+			
+			<button onclick="generate( );" type="button">Generate</button>
+			
+			<p id="response" onclick="highlight( this );">
+				<span id="verbal_response"></span>
+			</p>
+		</form>
+	</body>
+</html>

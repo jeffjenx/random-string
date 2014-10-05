@@ -1,0 +1,250 @@
+@import url( "http://fonts.googleapis.com/css?family=Anaheim" );
+
+body
+{
+	-webkit-user-select: none;
+	
+	cursor: default;
+	margin: 0;
+	user-select: none;
+}
+
+#response
+{
+	-webkit-user-select: text;
+	
+	background-color: rgba( 0, 0, 0, 0.3 );
+	border-color: rgba(0, 0, 0, 0.5);
+	border-radius: 1em;
+	border-style: dashed;
+	border-width: 0.13em;
+	box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.33), 0 0 1em rgba(0, 0, 0, 0.33);
+	clear: both;
+	display: none;
+	float: left;
+	font-family: Anaheim, Helvetica, Arial, sans-serif;
+	font-size: 33px;
+	font-weight: bold;
+	line-height: 1.5em;
+	margin: 1em auto;
+	padding: 2%;
+	text-align: center;
+	user-select: text;
+}
+
+#verbal_response
+{
+	-webkit-user-select: none;
+	
+	font-size: 0.5em;
+	line-height: 1.3em;
+	opacity: 0.50;
+	user-select: none;
+}
+
+#more
+{
+	display: none;
+}
+
+a
+{
+	color: hsl( 0, 0%, 88% );
+	display: block;
+	font-family: Anaheim, Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 10em;
+}
+
+a:hover
+{
+	color: hsl( 0, 0%, 66% );
+}
+
+button
+{
+	background: -webkit-linear-gradient( top, rgba( 110, 140, 12, 1 ) 0%, rgba( 67, 97, 21, 1 ) 100% );
+	background:    -moz-linear-gradient( top, rgba( 110, 140, 12, 1 ) 0%, rgba( 67, 97, 21, 1 ) 100% );
+	background:     -ms-linear-gradient( top, rgba( 110, 140, 12, 1 ) 0%, rgba( 67, 97, 21, 1 ) 100% );
+	background:      -o-linear-gradient( top, rgba( 110, 140, 12, 1 ) 0%, rgba( 67, 97, 21, 1 ) 100% );
+	background:         linear-gradient( top, rgba( 110, 140, 12, 1 ) 0%, rgba( 67, 97, 21, 1 ) 100% );
+	border-radius: 1em;
+	clear: both;
+	color: rgba( 255, 255, 255, 1 );
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	font-family: Anaheim, Helvetica, Arial, sans-serif;
+	font-size: 33px;
+	line-height: 1.5em;
+	margin-bottom: 0.33em;
+	margin-left: 25%;
+	margin-top: 0.25em;
+	outline: none;
+	padding: 0 1em;
+	text-align: center;
+   text-shadow: 0 -1px 0 rgba( 0,0,0,0.75 );
+	width: 50%;
+}
+
+button:hover
+{
+	background-color: rgba(173,132,132,1);
+	background: -webkit-linear-gradient( top, rgba( 136, 167, 35, 1 ) 0%, rgba( 76, 112, 23, 1 ) 100% );
+	background:    -moz-linear-gradient( top, rgba( 136, 167, 35, 1 ) 0%, rgba( 76, 112, 23, 1 ) 100% );
+	background:     -ms-linear-gradient( top, rgba( 136, 167, 35, 1 ) 0%, rgba( 76, 112, 23, 1 ) 100% );
+	background:      -o-linear-gradient( top, rgba( 136, 167, 35, 1 ) 0%, rgba( 76, 112, 23, 1 ) 100% );
+	background:         linear-gradient( top, rgba( 136, 167, 35, 1 ) 0%, rgba( 76, 112, 23, 1 ) 100% );
+}
+
+form
+{
+	width: 100%;
+}
+
+input[ type="checkbox" ]
+{
+	visibility: hidden;
+}
+
+input[ type="text" ]
+{
+	background-color: hsl( 0, 0%, 98% );
+	border-radius: 1em;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba( 0, 0, 0, 0.23 ),
+	            0 1px 0 rgba( 255, 255, 255, 0.20 );
+	display: block;
+	font-family: Anaheim, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	height: 1.8em;
+	margin: 0 auto -1.2em;
+	padding: 0;
+	pointer-events: none;
+	position: relative;
+	text-align: center;
+	top: -2em;
+	width: 5em;
+}
+
+input[ type="text" ]:focus
+{
+	outline: none;
+}
+
+form > label,
+#more > label
+{
+	clear: left;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-family: Anaheim, Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	left: -25%;
+	line-height: 1.25em;
+	margin-bottom: 0;
+	margin-left: 50%;
+	margin-right: 0;
+	margin-top: 0;
+	padding-bottom: 0.13em;
+	padding-left: 0.33em;
+	padding-top: 0.13em;
+	position: relative;
+	text-align: left;
+	width: 50%;
+}
+
+form > label:hover,
+#more > label:hover
+{
+	background-color: hsl( 0, 0%, 98% );
+}
+
+small
+{
+	display: inline-block;
+	float: right;
+	font-size: 0.88em;
+	opacity: 0.33;
+	padding-right: 0.33em;
+	text-align: right;
+}
+
+.toggle
+{
+	background-color: hsl( 0, 0%, 98% );
+	border-radius: 1em;
+	box-shadow: inset 0 1px 1px rgba( 0, 0, 0, 0.23 ),
+	            0 1px 0 rgba( 255, 255, 255, 0.20 );
+	height: 1.8em;
+	margin-bottom: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+	pointer-events: none;
+	position: relative;
+	top: 0.2em;
+	width: 5em;
+}
+
+.toggle:after
+{
+	border-radius: 1em;
+	background-color: hsl( 0, 0%, 88% );
+	box-shadow: inset 0 1px 1px rgba( 0, 0, 0, 0.23 ),
+	            0 1px 0 rgba( 255, 255, 255, 0.20 );
+	content: '';
+	height: 2px;
+	left: 0.88em;
+	position: absolute;
+	top: 0.88em;
+	width: 3.3em;
+}
+
+.toggle label
+{
+	-webkit-transition: all 0.33s ease;
+	
+	background-color: hsl( 100, 33%, 88% );
+	border-radius: 1em;
+	box-shadow: 0 2px 5px 0 rgba( 0, 0, 0, 0.33 );
+	cursor: pointer;
+	display: block;
+	left: 0.33em;
+	height: 1.35em;
+	position: absolute;
+	top: 0.2em;
+	transition: all 0.33s ease;
+	width: 1.35em;
+	z-index: 1;
+}
+
+.toggle label:after
+{
+	background-color: hsl( 0, 0%, 33% );
+	border-radius: 1em;
+	box-shadow: inset 0 1px 1px rgba( 0, 0, 0, 1.00 ),
+	            0 1px 0 rgba( 255, 255, 255, 0.90 );
+	content: '';
+	left: 0.35em;
+	position: absolute;
+	height: 0.63em;
+	top: 0.36em;
+	width: 0.63em;
+}
+
+.toggle input[ type="checkbox" ]:checked + label
+{
+	left: 3.33em;
+}
+
+.toggle input[ type="checkbox" ]:checked + label:after
+{
+	background-color: hsl( 100, 100%, 40% );
+}
